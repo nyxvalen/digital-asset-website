@@ -232,27 +232,45 @@
       color: hsl(var(--muted-foreground));
     }
 
+    /* Updated Hero Search Styles */
     .hero-search {
-      margin-top: 2rem;
+      max-width: 800px;
+      margin: 2rem auto 0;
       display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      gap: 1rem;
+      align-items: stretch;
+      gap: 0;
+      width: 100%;
     }
 
     .hero-search-container {
       position: relative;
-      width: 100%;
-      max-width: 28rem;
+      flex: 1;
+      display: flex;
+      align-items: center;
+    }
+
+    .hero-search .search-icon {
+      position: absolute;
+      left: 1rem;
+      top: auto;
+      width: 1.25rem;
+      height: 1.25rem;
+      color: hsl(var(--muted-foreground));
+      z-index: 10;
     }
 
     .hero-search-input {
       width: 100%;
-      padding: 1.5rem 1rem 1.5rem 2.5rem;
-      border-radius: var(--radius);
+      padding: 1rem 1rem 1rem 3rem;
       border: 1px solid hsl(var(--input));
+      border-right: none;
+      border-top-left-radius: 0.5rem;
+      border-bottom-left-radius: 0.5rem;
       font-size: 1rem;
+      height: 100%;
+      min-height: 3.5rem;
+      background-color: hsl(var(--background));
+      outline: none;
     }
 
     .button {
@@ -267,6 +285,18 @@
       border: none;
       cursor: pointer;
       transition: opacity 0.2s;
+    }
+
+    .hero-search .button {
+      min-width: 180px;
+      padding: 0 1.5rem;
+      height: 3.5rem;
+      font-size: 1rem;
+      border-top-left-radius: 0;
+      border-bottom-left-radius: 0;
+      border-top-right-radius: 0.5rem;
+      border-bottom-right-radius: 0.5rem;
+      white-space: nowrap;
     }
 
     .button:hover {
@@ -710,21 +740,6 @@
 
     /* Responsive */
     @media (min-width: 640px) {
-      .hero-search {
-        flex-direction: row;
-        gap: 0;
-      }
-
-      .hero-search-input {
-        border-top-right-radius: 0;
-        border-bottom-right-radius: 0;
-      }
-
-      .hero-search .button {
-        border-top-left-radius: 0;
-        border-bottom-left-radius: 0;
-      }
-
       .newsletter-form {
         flex-direction: row;
       }
@@ -746,6 +761,23 @@
 
       .assets-grid {
         grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 640px) {
+      .hero-search {
+        flex-direction: column;
+        gap: 0.5rem;
+      }
+
+      .hero-search-input {
+        border-radius: 0.5rem;
+        border-right: 1px solid hsl(var(--input));
+      }
+
+      .hero-search .button {
+        border-radius: 0.5rem;
+        width: 100%;
       }
     }
 
@@ -871,15 +903,16 @@
         <p class="hero-description">
           Download premium fonts, textures, and graphic elements. No login required.
         </p>
+        <!-- Updated Hero Search Section -->
         <div class="hero-search">
           <div class="hero-search-container">
-            <svg class="search-icon" style="top: 1.25rem;" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
               <circle cx="11" cy="11" r="8"></circle>
               <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
             </svg>
             <input type="search" placeholder="Search fonts, textures, graphics..." class="hero-search-input">
           </div>
-          <button class="button button-lg button-full">Explore Assets</button>
+          <button class="button">Explore Assets</button>
         </div>
       </div>
       <div class="blur-circle-1"></div>
