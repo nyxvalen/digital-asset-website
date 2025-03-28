@@ -85,7 +85,7 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <div className="absolute -right-24 -top-24 h-96 w-96 rounded-full bg-primary/20 blur-3xl"></div>
+          <div className="absolute -right-24 -top-24 h-96 w-40 rounded-full bg-primary/20 blur-3xl"></div>
           <div className="absolute -bottom-24 -left-24 h-96 w-96 rounded-full bg-secondary/20 blur-3xl"></div>
         </section>
 
