@@ -28,7 +28,7 @@ export default function Home() {
               <Input
                 type="search"
                 placeholder="Search assets..."
-                className="w-full bg-background pl-8 md:w-[300px] lg:w-[400px]"
+                className="w-full bg-background pl-8 md:w-[300px] lg:w-[200px]"
               />
             </div>
             <nav className="flex items-center space-x-4">
