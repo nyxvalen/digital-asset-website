@@ -874,14 +874,14 @@
         </nav>
       </div>
       <div class="mobile-nav">
-        <button class="icon-button mr-2">
+        <button class="icon-button mr-2" onclick="window.location.href='/search'">
           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
             <circle cx="11" cy="11" r="8"></circle>
             <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
           </svg>
           <span class="sr-only">Search</span>
         </button>
-        <button class="icon-button">
+        <button class="icon-button" onclick="toggleMobileMenu()">
           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
             <line x1="3" y1="6" x2="21" y2="6"></line>
             <line x1="3" y1="12" x2="21" y2="12"></line>
@@ -912,7 +912,7 @@
             </svg>
             <input type="search" placeholder="Search fonts, textures, graphics..." class="hero-search-input">
           </div>
-          <button class="button">Explore Assets</button>
+          <a href="/explore" class="button">Explore Assets</a>
         </div>
       </div>
       <div class="blur-circle-1"></div>
@@ -1015,7 +1015,7 @@
 
           <div class="tab-content active" id="all">
             <div class="assets-grid">
-              <div class="asset-card">
+              <a href="/asset/neon-wave-font" class="asset-card">
                 <div class="asset-image">
                   <img src="https://placehold.co/400x400" alt="Neon Wave Font">
                 </div>
@@ -1036,25 +1036,25 @@
                     </div>
                   </div>
                   <div class="asset-actions">
-                    <button class="button button-outline">
+                    <a href="/preview/neon-wave-font" class="button button-outline">
                       <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width: 1rem; height: 1rem; margin-right: 0.5rem;">
                         <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
                         <circle cx="12" cy="12" r="3"></circle>
                       </svg>
                       Preview
-                    </button>
-                    <button class="button">
+                    </a>
+                    <a href="/download/neon-wave-font" class="button">
                       <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width: 1rem; height: 1rem; margin-right: 0.5rem;">
                         <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
                         <polyline points="7 10 12 15 17 10"></polyline>
                         <line x1="12" y1="15" x2="12" y2="3"></line>
                       </svg>
                       Download
-                    </button>
+                    </a>
                   </div>
                 </div>
-              </div>
-              <div class="asset-card">
+              </a>
+              <a href="/asset/marble-texture-pack" class="asset-card">
                 <div class="asset-image">
                   <img src="https://placehold.co/400x400" alt="Marble Texture Pack">
                 </div>
@@ -1074,25 +1074,25 @@
                     </div>
                   </div>
                   <div class="asset-actions">
-                    <button class="button button-outline">
+                    <a href="/preview/marble-texture-pack" class="button button-outline">
                       <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width: 1rem; height: 1rem; margin-right: 0.5rem;">
                         <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
                         <circle cx="12" cy="12" r="3"></circle>
                       </svg>
                       Preview
-                    </button>
-                    <button class="button">
+                    </a>
+                    <a href="/download/marble-texture-pack" class="button">
                       <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width: 1rem; height: 1rem; margin-right: 0.5rem;">
                         <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
                         <polyline points="7 10 12 15 17 10"></polyline>
                         <line x1="12" y1="15" x2="12" y2="3"></line>
                       </svg>
                       Download
-                    </button>
+                    </a>
                   </div>
                 </div>
-              </div>
-              <div class="asset-card">
+              </a>
+              <a href="/asset/geometric-icons-set" class="asset-card">
                 <div class="asset-image">
                   <img src="https://placehold.co/400x400" alt="Geometric Icons Set">
                 </div>
@@ -1112,25 +1112,25 @@
                     </div>
                   </div>
                   <div class="asset-actions">
-                    <button class="button button-outline">
+                    <a href="/preview/geometric-icons-set" class="button button-outline">
                       <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width: 1rem; height: 1rem; margin-right: 0.5rem;">
                         <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
                         <circle cx="12" cy="12" r="3"></circle>
                       </svg>
                       Preview
-                    </button>
-                    <button class="button">
+                    </a>
+                    <a href="/download/geometric-icons-set" class="button">
                       <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width: 1rem; height: 1rem; margin-right: 0.5rem;">
                         <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
                         <polyline points="7 10 12 15 17 10"></polyline>
                         <line x1="12" y1="15" x2="12" y2="3"></line>
                       </svg>
                       Download
-                    </button>
+                    </a>
                   </div>
                 </div>
-              </div>
-              <div class="asset-card">
+              </a>
+              <a href="/asset/gradient-mesh-backgrounds" class="asset-card">
                 <div class="asset-image">
                   <img src="https://placehold.co/400x400" alt="Gradient Mesh Backgrounds">
                 </div>
@@ -1151,33 +1151,33 @@
                     </div>
                   </div>
                   <div class="asset-actions">
-                    <button class="button button-outline">
+                    <a href="/preview/gradient-mesh-backgrounds" class="button button-outline">
                       <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width: 1rem; height: 1rem; margin-right: 0.5rem;">
                         <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
                         <circle cx="12" cy="12" r="3"></circle>
                       </svg>
                       Preview
-                    </button>
-                    <button class="button">
+                    </a>
+                    <a href="/download/gradient-mesh-backgrounds" class="button">
                       <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width: 1rem; height: 1rem; margin-right: 0.5rem;">
                         <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
                         <polyline points="7 10 12 15 17 10"></polyline>
                         <line x1="12" y1="15" x2="12" y2="3"></line>
                       </svg>
                       Download
-                    </button>
+                    </a>
                   </div>
                 </div>
-              </div>
+              </a>
             </div>
             <div class="center">
-              <button class="button button-outline button-lg">Load More</button>
+              <a href="/explore/all" class="button button-outline button-lg">Load More</a>
             </div>
           </div>
 
           <div class="tab-content" id="fonts">
             <div class="assets-grid">
-              <div class="asset-card">
+              <a href="/asset/neon-wave-font" class="asset-card">
                 <div class="asset-image">
                   <img src="https://placehold.co/400x400" alt="Neon Wave Font">
                 </div>
@@ -1198,31 +1198,34 @@
                     </div>
                   </div>
                   <div class="asset-actions">
-                    <button class="button button-outline">
+                    <a href="/preview/neon-wave-font" class="button button-outline">
                       <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width: 1rem; height: 1rem; margin-right: 0.5rem;">
                         <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
                         <circle cx="12" cy="12" r="3"></circle>
                       </svg>
                       Preview
-                    </button>
-                    <button class="button">
+                    </a>
+                    <a href="/download/neon-wave-font" class="button">
                       <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width: 1rem; height: 1rem; margin-right: 0.5rem;">
                         <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
                         <polyline points="7 10 12 15 17 10"></polyline>
                         <line x1="12" y1="15" x2="12" y2="3"></line>
                       </svg>
                       Download
-                    </button>
+                    </a>
                   </div>
                 </div>
-              </div>
+              </a>
               <!-- More font assets would go here -->
+            </div>
+            <div class="center">
+              <a href="/explore/fonts" class="button button-outline button-lg">Load More</a>
             </div>
           </div>
 
           <div class="tab-content" id="textures">
             <div class="assets-grid">
-              <div class="asset-card">
+              <a href="/asset/marble-texture-pack" class="asset-card">
                 <div class="asset-image">
                   <img src="https://placehold.co/400x400" alt="Marble Texture Pack">
                 </div>
@@ -1242,31 +1245,34 @@
                     </div>
                   </div>
                   <div class="asset-actions">
-                    <button class="button button-outline">
+                    <a href="/preview/marble-texture-pack" class="button button-outline">
                       <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width: 1rem; height: 1rem; margin-right: 0.5rem;">
                         <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
                         <circle cx="12" cy="12" r="3"></circle>
                       </svg>
                       Preview
-                    </button>
-                    <button class="button">
+                    </a>
+                    <a href="/download/marble-texture-pack" class="button">
                       <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width: 1rem; height: 1rem; margin-right: 0.5rem;">
                         <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
                         <polyline points="7 10 12 15 17 10"></polyline>
                         <line x1="12" y1="15" x2="12" y2="3"></line>
                       </svg>
                       Download
-                    </button>
+                    </a>
                   </div>
                 </div>
-              </div>
+              </a>
               <!-- More texture assets would go here -->
+            </div>
+            <div class="center">
+              <a href="/explore/textures" class="button button-outline button-lg">Load More</a>
             </div>
           </div>
 
           <div class="tab-content" id="graphics">
             <div class="assets-grid">
-              <div class="asset-card">
+              <a href="/asset/geometric-icons-set" class="asset-card">
                 <div class="asset-image">
                   <img src="https://placehold.co/400x400" alt="Geometric Icons Set">
                 </div>
@@ -1286,25 +1292,28 @@
                     </div>
                   </div>
                   <div class="asset-actions">
-                    <button class="button button-outline">
+                    <a href="/preview/geometric-icons-set" class="button button-outline">
                       <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width: 1rem; height: 1rem; margin-right: 0.5rem;">
                         <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
                         <circle cx="12" cy="12" r="3"></circle>
                       </svg>
                       Preview
-                    </button>
-                    <button class="button">
+                    </a>
+                    <a href="/download/geometric-icons-set" class="button">
                       <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width: 1rem; height: 1rem; margin-right: 0.5rem;">
                         <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
                         <polyline points="7 10 12 15 17 10"></polyline>
                         <line x1="12" y1="15" x2="12" y2="3"></line>
                       </svg>
                       Download
-                    </button>
+                    </a>
                   </div>
                 </div>
-              </div>
+              </a>
               <!-- More graphics assets would go here -->
+            </div>
+            <div class="center">
+              <a href="/explore/graphics" class="button button-outline button-lg">Load More</a>
             </div>
           </div>
         </div>
@@ -1316,7 +1325,7 @@
       <div class="container">
         <h2 class="section-title">Featured Assets</h2>
         <div class="featured-grid">
-          <div class="featured-card">
+          <a href="/collection/cyberpunk-fonts" class="featured-card">
             <div class="featured-overlay"></div>
             <img src="https://placehold.co/800x600" alt="Featured font collection" class="featured-image">
             <div class="featured-content">
@@ -1324,8 +1333,8 @@
               <h3 class="featured-title">Cyberpunk Font Collection</h3>
               <p class="featured-description">10 futuristic fonts for your next project</p>
             </div>
-          </div>
-          <div class="featured-card">
+          </a>
+          <a href="/collection/abstract-textures" class="featured-card">
             <div class="featured-overlay"></div>
             <img src="https://placehold.co/800x600" alt="Featured texture pack" class="featured-image">
             <div class="featured-content">
@@ -1333,7 +1342,7 @@
               <h3 class="featured-title">Abstract Texture Pack</h3>
               <p class="featured-description">25 high-resolution abstract textures</p>
             </div>
-          </div>
+          </a>
         </div>
       </div>
     </section>
@@ -1344,8 +1353,8 @@
         <div class="newsletter-container">
           <h2 class="newsletter-title">Stay Updated</h2>
           <p class="newsletter-description">Get notified when we add new assets to our collection.</p>
-          <form class="newsletter-form">
-            <input type="email" placeholder="Enter your email" class="newsletter-input">
+          <form class="newsletter-form" action="/subscribe" method="post">
+            <input type="email" placeholder="Enter your email" class="newsletter-input" required>
             <button type="submit" class="button">Subscribe</button>
           </form>
           <p class="newsletter-disclaimer">No spam, we promise. Unsubscribe at any time.</p>
@@ -1367,13 +1376,13 @@
             Free design assets for the modern creator. No login required.
           </p>
           <div class="social-links">
-            <a href="#" class="icon-button">
+            <a href="https://facebook.com/assetvault" class="icon-button">
               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width: 1rem; height: 1rem;">
                 <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
               </svg>
               <span class="sr-only">Facebook</span>
             </a>
-            <a href="#" class="icon-button">
+            <a href="https://instagram.com/assetvault" class="icon-button">
               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width: 1rem; height: 1rem;">
                 <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
                 <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
@@ -1381,7 +1390,7 @@
               </svg>
               <span class="sr-only">Instagram</span>
             </a>
-            <a href="#" class="icon-button">
+            <a href="https://twitter.com/assetvault" class="icon-button">
               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width: 1rem; height: 1rem;">
                 <path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"></path>
               </svg>
@@ -1393,16 +1402,16 @@
           <h3 class="footer-heading">Resources</h3>
           <ul class="footer-links">
             <li>
-              <a href="#" class="footer-link">Fonts</a>
+              <a href="/fonts" class="footer-link">Fonts</a>
             </li>
             <li>
-              <a href="#" class="footer-link">Textures</a>
+              <a href="/textures" class="footer-link">Textures</a>
             </li>
             <li>
-              <a href="#" class="footer-link">Graphics</a>
+              <a href="/graphics" class="footer-link">Graphics</a>
             </li>
             <li>
-              <a href="#" class="footer-link">Templates</a>
+              <a href="/templates" class="footer-link">Templates</a>
             </li>
           </ul>
         </div>
@@ -1410,16 +1419,16 @@
           <h3 class="footer-heading">Company</h3>
           <ul class="footer-links">
             <li>
-              <a href="#" class="footer-link">About</a>
+              <a href="/about" class="footer-link">About</a>
             </li>
             <li>
-              <a href="#" class="footer-link">Blog</a>
+              <a href="/blog" class="footer-link">Blog</a>
             </li>
             <li>
-              <a href="#" class="footer-link">Careers</a>
+              <a href="/careers" class="footer-link">Careers</a>
             </li>
             <li>
-              <a href="#" class="footer-link">Contact</a>
+              <a href="/contact" class="footer-link">Contact</a>
             </li>
           </ul>
         </div>
@@ -1427,16 +1436,16 @@
           <h3 class="footer-heading">Legal</h3>
           <ul class="footer-links">
             <li>
-              <a href="#" class="footer-link">Terms</a>
+              <a href="/terms" class="footer-link">Terms</a>
             </li>
             <li>
-              <a href="#" class="footer-link">Privacy</a>
+              <a href="/privacy" class="footer-link">Privacy</a>
             </li>
             <li>
-              <a href="#" class="footer-link">Licenses</a>
+              <a href="/licenses" class="footer-link">Licenses</a>
             </li>
             <li>
-              <a href="#" class="footer-link">Cookie Policy</a>
+              <a href="/cookie-policy" class="footer-link">Cookie Policy</a>
             </li>
           </ul>
         </div>
@@ -1469,6 +1478,26 @@
           // Show the corresponding tab content
           const tabId = tab.getAttribute('data-tab');
           document.getElementById(tabId).classList.add('active');
+        });
+      });
+    });
+
+    // Mobile menu toggle function
+    function toggleMobileMenu() {
+      // This would typically show/hide a mobile menu
+      alert('Mobile menu toggled - implement your mobile menu here');
+    }
+
+    // Form submission handling
+    document.addEventListener('DOMContentLoaded', function() {
+      const searchForms = document.querySelectorAll('input[type="search"]');
+      
+      searchForms.forEach(form => {
+        form.addEventListener('keypress', function(e) {
+          if (e.key === 'Enter') {
+            e.preventDefault();
+            window.location.href = '/search?q=' + encodeURIComponent(this.value);
+          }
         });
       });
     });
